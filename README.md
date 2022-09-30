@@ -240,3 +240,45 @@ tip： 自己自定义模板时注意
 
 
 现在前期准备感觉挺麻烦的，后续研究研究改成 npm 版本，告辞！！
+
+
+
+
+
+## NPM版本来了
+
+基本使用差不多，话不多说 开始吧
+
+安装
+
+```js
+npm install clone-tpl
+or
+yarn add clone-tpl
+```
+
+配置
+
+```js
+// 在package.json 下添命令
+
+"init": "node ./node_modules/clone-tpl/index.js"
+```
+
+
+
+然后就可以愉快的使用了（使用方法与前面相同 npm run init 即可）
+
+
+
+### npm模板修改 说明
+
+由于经过npm包装， 修改的话需要在 node_modules下找到对应的位置
+
+可以在文件夹直接搜索 clone-tpl 内容与非npm版基本一致
+
+1.  修改模板的话只能直接 在node_modules  内 修改， 多人开发同步会有问题（不过一个人建立好模板内容一般也就足够了）
+
+
+
+注意： 使用npm 版需保证  有与node_modules 同级的src文件夹，不然会找不到对应的 位置（也可自行修改脚本）
